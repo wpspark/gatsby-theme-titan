@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from "../Components/SiteHeader/Index"
 import Footer from "../Components/SiteFooter/Index"
+import NewsLetter from '../Components/Newsletter/Index'
 
 import "../Utils/Typography"
 
@@ -21,6 +22,9 @@ class CatLayout extends Component {
             {this.props.children}
           </div>
         </main>
+
+        <NewsLetter container={true} />
+
 
         <Footer />
       </div>

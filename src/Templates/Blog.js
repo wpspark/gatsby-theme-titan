@@ -13,22 +13,29 @@ class BlogPage extends Component {
     const next = this.props.pageContext.next
     const prev = this.props.pageContext.prev
     const numberOfPostsPerPages = this.props.pageContext.numberOfPostsPages
+    const Path = this.props.location.pathname;
     return (
-        <Layout wordpressSiteMetadata={this.props.pageContext.wordpressSiteMetadata}>
+        <Layout wordpressSiteMetadata={this.props.pageContext.wordpressSiteMetadata} path={Path}>
         	
           <SEO title="Home" />
 
-          <Carousel 
-            posts = {this.props.pageContext.allPosts}
-            desktop = {4}
-            tablet = {2}
-            mobile = {1}
-            gap = {20}
-            loop = {false}
-            dots = {false}
-            nav = {true}
-            autoPlay = {false}
-          />
+          {
+            Path === '/'
+            ? 
+            <Carousel 
+              posts = {this.props.pageContext.allPosts}
+              desktop = {4}
+              tablet = {2}
+              mobile = {1}
+              gap = {20}
+              loop = {false}
+              dots = {false}
+              nav = {true}
+              autoPlay = {false}
+            />
+            : null
+          }
+          
 
         	<AllPost data={allPosts.edges}/>
 

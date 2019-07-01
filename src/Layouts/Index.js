@@ -18,7 +18,7 @@ class MainLayout extends Component {
           </div>
         </main>
 
-        <NewsLetter />
+        <NewsLetter container={true} />
 
         <Footer />
       </div>
