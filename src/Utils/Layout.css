@@ -1,0 +1,24 @@
+.common-spacing {
+	padding: 1rem 1.5rem;
+}
+.image-objectfit-contain img{
+	object-fit: contain;
+}
+html.has-navbar-fixed-top,
+body.has-navbar-fixed-top {
+	padding-top: 5.5rem;
+}
+
+.title{
+	line-height: 1.2;
+	font-weight: 700;
+	text-indent: -1px;
+	color: #000;
+}
+
+.category-title{
+	padding:100px 0px 50px;
+	text-align: center;
+}
+
+

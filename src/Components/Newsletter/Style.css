@@ -1,0 +1,22 @@
+.newsletter-wrapper{
+    padding:100px;
+}
+.newsletter-wrapper .title{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.newsletter-wrapper form{
+    margin:30px 0px;
+}
+.newsletter-wrapper form input[type="email"]{
+    width:300px;
+}
+.newsletter-wrapper .submit-message {
+    margin:30px 0px;
+    font-weight:800;
+}
+.newsletter-wrapper .submit-message .result{
+    text-transform: uppercase;
+}
