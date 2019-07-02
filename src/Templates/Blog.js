@@ -37,14 +37,12 @@ class BlogPage extends Component {
             />
             : null
           }
-          
 
         	<AllPost data={allPosts.edges}/>
 
           <AllPostPagination prev={prev} next={next} pageCount={numberOfPostsPerPages}/>
 
           <NewsLetter container={true} paddingTop="50px"/>
-
 
         </Layout>
     )

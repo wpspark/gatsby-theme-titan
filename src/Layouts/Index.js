@@ -17,7 +17,13 @@ class MainLayout extends Component {
           </div>
         </main>
 
-        <Footer />
+        <Footer 
+          siteName="Spark"
+          facebook="htts://facebook.com/themexpert"
+          twitter="htts://twitter.com/themexpert"
+          linkedin="htts://linkedin.com/themexpert"
+          pinterest="htts://pinterest.com/themexpert"
+        />
       </div>
     )
   }
