@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Link, StaticQuery, graphql } from "gatsby"
-// import Menu from "../siteMenu"
 import CategoryMenu from "../Menu/sidebarMenu"
-// import logo from "../../images/wpspark-logo.png"
 import Helmet from "react-helmet"
 
 export default class postHeader extends Component {
@@ -15,7 +13,6 @@ export default class postHeader extends Component {
     }
     
     render() {
-      // let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
       let authorImage = this.props.data;
       
       const zindexUp = {
@@ -60,7 +57,6 @@ export default class postHeader extends Component {
             const { sparkData } = data;
 
             return (
-              // <nav style={navCustomStyle} className="navbarr is-transparent has-shadow is-spaced single-header" role="navigation">
               <nav  
               style = {! this.props.title ? navCustomStyle : null}
               className={! this.props.title ? 'navbarr is-transparent has-shadow is-spaced single-header' : ''} 
@@ -82,10 +78,6 @@ export default class postHeader extends Component {
 
                 <div className="navbar-menuu" style={zindexUp}>
                   <Link to="/" className="navbar-itemm" >
-                    {/* {
-                      sparkData.logo ? <img src={sparkData.logo} alt="" width="15%" /> :
-                        wordpressSiteMetadata.name
-                    } */}
                     <button className="button">Home</button>
                   </Link>
                   <button className="button is-pulled-right" onClick={this.toggleOffCanvasMenu}>Menu</button>

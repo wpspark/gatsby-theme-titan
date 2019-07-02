@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 import { Link, StaticQuery, graphql } from "gatsby"
 
-// export default class Menu extends Component {
-//   render() {
-//     return <div>Fake</div>
-//   }
-// }
 export default class Menu extends Component {
     state = { ready: false };
     

@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Link, StaticQuery, graphql } from "gatsby"
-// import Menu from "../siteMenu"
 import CategoryMenu from "../Menu/SidebarMenu"
-// import logo from "../../images/wpspark-logo.png"
 import Helmet from "react-helmet"
 
 class catHeader extends Component {

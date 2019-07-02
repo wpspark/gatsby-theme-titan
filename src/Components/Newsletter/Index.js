@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp';
-// import './style.css';
 import {NewsletterWrapper} from './Style'
 
 export class NewsLetter extends Component {

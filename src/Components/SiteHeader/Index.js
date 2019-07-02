@@ -3,10 +3,6 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import MainMenu from "../Menu/MainMenu"
 
-// import Menu from "../siteMenu"
-// import CategoryMenu from "../Menu/sidebarMenu"
-// import logo from "../../images/wpspark-logo.png"
-
 
 export default class Header extends Component {
     toggleDropdownMenu = () => {
