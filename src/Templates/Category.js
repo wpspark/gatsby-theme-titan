@@ -44,6 +44,7 @@ export const categoryQuery = graphql`
                 title
                 excerpt
                 slug
+                content
                 date(formatString: "MMMM DD, YYYY")
                 categories{
                     id

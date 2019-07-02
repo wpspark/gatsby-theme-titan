@@ -99,6 +99,7 @@ export const UserPostQuery = graphql`
                         title
                         wordpress_id
                         excerpt
+                        content
                         slug
                         date(formatString: "MMMM DD, YYYY")
                         categories{
