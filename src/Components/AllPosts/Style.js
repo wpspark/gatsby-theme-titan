@@ -23,6 +23,10 @@ export const SinglePostCard = Styled.article`
     .title{
         font-weight:800;
         font-size:28px;
+        @media(max-width:768px){
+            font-size:20px;
+            line-height:1.3;
+        }
         a{
             transition:all 0.4s ease;
             &:hover{

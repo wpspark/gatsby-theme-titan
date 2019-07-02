@@ -6,15 +6,25 @@ export const lightTheme = {
 
 export const NewsletterWrapper = Styled.div`
     padding:100px;
+    @media(max-width:768px){
+        padding:0px;
+    }
     .title{
         font-size:${ lightTheme.subtitlefz };
         font-weight:700;
         margin-bottom:10px;
+        @media(max-width:768px){
+            font-size:22px;
+            line-height:1.2;
+        }
     }
     form{
         margin:30px 0px;
         input[type="email"]{
             width:300px;
+            @media(max-width:768px){
+                width:auto;
+            }
         }
     }
     .submit-message{

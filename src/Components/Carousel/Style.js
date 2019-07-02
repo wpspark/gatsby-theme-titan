@@ -2,8 +2,14 @@ import Styled from 'styled-components';
 
 export const CarouselWrapper = Styled.section`
     position:relative;
+    @media(max-width:768px){
+        padding:0px 30px;
+    }
     .hero-body{
         margin:50px auto 0px;
+        @media(max-width:768px){
+            padding-bottom:0px;
+        }
     }
     .item{
         position:relative;

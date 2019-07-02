@@ -47,10 +47,10 @@ export class PostCard extends Component {
                                 <span className="text-icon arrow-right"></span>
                                 <Link to={`/post/${post.slug}`}>Read More</Link>
                             </div>
-                            <div className="read-later is-flex is-align-center p-0-10 m-0-10">
+                            {/* <div className="read-later is-flex is-align-center p-0-10 m-0-10">
                                 <span className="text-icon bookmark"></span>
                                 <Link className="has-text-grey-darker" to={`/post/${post.slug}`}>Read Later</Link>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="right is-capitalize">
                             <div className="user-wrapper is-flex is-align-center">
