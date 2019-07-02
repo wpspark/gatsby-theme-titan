@@ -24,14 +24,19 @@ export class MainMenu extends Component {
                     }
                 `}
                 render={data => (
-                <MenuItems className="navbar-item is-hoverable">              
-                    {
+                <MenuItems className="navbar-item is-hoverable">   
+                    <Link className="has-text-grey-light navbar-item" to={`/`}>Home</Link>           
+                    <Link className="has-text-grey-light navbar-item" to={`/`}>Posts</Link>           
+                    <Link className="has-text-grey-light navbar-item" to={`/categories/wp-onepager`}>Category</Link>           
+                    <Link className="has-text-grey-light navbar-item" to={`/user/uzzal`}>Author</Link>           
+                    <Link className="has-text-grey-light navbar-item" to={`/`}>Buy Theme</Link>           
+                    {/* {
                     data.allWordpressCategory.edges.map( ({node}) => (
                         node.count !== 0 ? 
                         <Link key={node.id} className={ active === node.slug ? 'has-text-grey-light navbar-item is-active' : 'has-text-grey-light navbar-item'} to={'/categories/' + node.slug} dangerouslySetInnerHTML={{__html:node.name}} />
                         : null 
                     ))
-                    }
+                    } */}
                 </MenuItems>
                 )}
             />

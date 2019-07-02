@@ -11,6 +11,15 @@ export class CarouselCard extends Component {
                     <figure className="image is-4by3">
                         <img src={data.spark_media} alt={data.slug}/>
                     </figure>
+                    <div className="post-categories">
+                        {
+                            data.categories &&
+                            <Link key={data.categories[0].id} to={`/categories/${data.categories[0].slug}`}>
+                                <span dangerouslySetInnerHTML={{__html:data.categories[0].name + " "}} />
+                            </Link>
+                        }
+                    </div>
+                    
                 </div>
                 <div className="card-content">
                     <h2>

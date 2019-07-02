@@ -8,6 +8,23 @@ export const CarouselWrapper = Styled.section`
     .item{
         position:relative;
         z-index:9;
+        .card-image{
+            .post-categories{
+                position:absolute;
+                top:15px;
+                right:15px;
+                a{
+                    margin:0px 5px;
+                    background:#41a4e6;
+                    color:white;
+                    padding:4px 12px;
+                    font-size:13px;
+                    display:inline-block;
+                    font-weight:700;
+                    border-radius:50px;
+                }
+            }
+        }
         .card-content{
             h2{
                 a{
