@@ -2,20 +2,15 @@ import React, { Component } from 'react'
 import { Link, StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import MainMenu from "../Menu/MainMenu"
-
+import MobileMenu from '../Menu/MobileMenu'
 
 export default class Header extends Component {
     toggleDropdownMenu = () => {
       document.getElementById('MainsiteNav').classList.toggle('is-active');
     }
-    toggleOffCanvasMenu = () => {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("mySidenav").style.marginRight = "250px";
-    }
 
     render() {
       let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
-      
 
       return (
         <StaticQuery
@@ -56,12 +51,8 @@ export default class Header extends Component {
                         sparkData.logo ? <img src={sparkData.logo} alt="" /> : wordpressSiteMetadata.name
                       }
                     </Link>
-                    {/* <div className="menu">
-                      <button className="button" onClick={this.toggleOffCanvasMenu}>Menu</button>
-                      <div className="navbar-start">
-                        <CategoryMenu slug={this.props.slug} />
-                      </div>
-                    </div> */}
+
+                    <MobileMenu />
 
                   </div>
                 
