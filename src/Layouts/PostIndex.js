@@ -26,7 +26,7 @@ class PostLayout extends Component {
           </div>
         </main>
 
-        <NewsLetter container={true} />
+        <NewsLetter container={true}/>
 
         <Footer />
       </div>

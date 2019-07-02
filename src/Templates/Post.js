@@ -7,6 +7,7 @@ import PostNavigation from "../Components/Post/Navigation/Index"
 import SocialShare from '../Components/SocialShare/Index';
 import PostHeader from '../Components/Post/Header/Index'
 import PostContent from '../Components/Post/Content/Index'
+import NewsLetter from '../Components/Newsletter/Index'
 
 // import Header from '../components/siteHeader/postHeader'
 
@@ -83,6 +84,8 @@ class PostTemplate extends Component {
 
 					</div>
 				</section>
+
+				<NewsLetter container={false}/>
 
 
 			</Layout>

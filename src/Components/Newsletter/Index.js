@@ -35,8 +35,9 @@ export class NewsLetter extends Component {
     }
     render() {
         const container = this.props.container === true ? this.props.container : false;
+        const paddingTop = this.props.paddingTop ? this.props.paddingTop : '100px';
         return (
-            <NewsletterWrapper className="newsletter-wrapper has-text-centered" background={this.props.background}>
+            <NewsletterWrapper className="newsletter-wrapper has-text-centered" background={this.props.background} style={{paddingTop:paddingTop}}>
                 <div className={ container ? 'is-flex container is-justified-center' : null}>
                     <div className={ container ? 'column is-four-fifths has-background-light hero-body' : null }>
                         <h2 className="title">Subscribe to WpSpark</h2>

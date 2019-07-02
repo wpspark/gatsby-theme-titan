@@ -23,7 +23,7 @@ class CatLayout extends Component {
           </div>
         </main>
 
-        <NewsLetter container={true} />
+        <NewsLetter container={true} paddingTop="0px"/>
 
 
         <Footer />

@@ -5,6 +5,8 @@ import AllPost from "../Components/AllPosts/Index"
 import AllPostPagination from "../Components/Pagination/Index"
 import SEO from "../Utils/SEO"
 import Carousel from '../Components/Carousel/Index'
+import NewsLetter from '../Components/Newsletter/Index'
+
 
 class BlogPage extends Component {
 
@@ -40,6 +42,9 @@ class BlogPage extends Component {
         	<AllPost data={allPosts.edges}/>
 
           <AllPostPagination prev={prev} next={next} pageCount={numberOfPostsPerPages}/>
+
+          <NewsLetter container={true} paddingTop="50px"/>
+
 
         </Layout>
     )
