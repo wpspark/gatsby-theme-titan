@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
 import {SinglePostCard} from './Style'
+const readingTime = require('reading-time');
 
 export class PostCard extends Component {
     filterExcerpt = (excerpt) => {
@@ -14,6 +15,7 @@ export class PostCard extends Component {
     }
     render() {
         const post = this.props.cardData;
+        const timeToRead = readingTime(post.content);
         return (
             <SinglePostCard className="cardd"> 
 
@@ -30,7 +32,7 @@ export class PostCard extends Component {
                         <time className="" dateTime={new Date(post.date).toLocaleDateString("en-US")}>{post.date}</time>
                         <span className="dot-divider"></span>
                         
-                        <span> 1 min read </span>
+                        <span> {timeToRead.text ? timeToRead.text : "0 Min Read"} </span>
                         <span className="dot-divider"></span>
                         {post.categories && post.categories.map(
                             category => <Link key={category.id} to={`/categories/${category.slug}`}><span dangerouslySetInnerHTML={{__html:category.name + " "}} /></Link>

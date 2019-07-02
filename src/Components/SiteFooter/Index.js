@@ -21,10 +21,10 @@ export default class Footer extends Component {
             </p>
           </div>
           <div className="has-text-centered is-flex is-justified-center">
-            <a href={facebook ? facebook : "https://facebook.com/themexpert"} className="p-0-10" target="_blank" > <FacebookIcon size={32} round={false} borderRadius={5}/> </a>
-            <a href={twitter ? twitter : "https://twitter.com/themexpert"} className="p-0-10" target="_blank" > <TwitterIcon size={32} round={false} borderRadius={5}/> </a>
-            <a href={linkedin ? linkedin : "https://linkedin.com/themexpert"} className="p-0-10" target="_blank" > <LinkedinIcon size={32} round={false} borderRadius={5}/> </a>
-            <a href={pinterest ? pinterest : "https://pinterest.com/themexpert"} className="p-0-10" target="_blank" > <PinterestIcon size={32} round={false} borderRadius={5}/> </a>
+            <a rel="noopener noreferrer" href={facebook ? facebook : "https://facebook.com/themexpert"} className="p-0-10" target="_blank" > <FacebookIcon size={32} round={false} borderRadius={5}/> </a>
+            <a rel="noopener noreferrer" href={twitter ? twitter : "https://twitter.com/themexpert"} className="p-0-10" target="_blank" > <TwitterIcon size={32} round={false} borderRadius={5}/> </a>
+            <a rel="noopener noreferrer" href={linkedin ? linkedin : "https://linkedin.com/themexpert"} className="p-0-10" target="_blank" > <LinkedinIcon size={32} round={false} borderRadius={5}/> </a>
+            <a rel="noopener noreferrer" href={pinterest ? pinterest : "https://pinterest.com/themexpert"} className="p-0-10" target="_blank" > <PinterestIcon size={32} round={false} borderRadius={5}/> </a>
           </div>
           
         </FooterWrapper>

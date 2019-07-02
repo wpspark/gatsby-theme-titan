@@ -47,7 +47,7 @@ class PostTemplate extends Component {
 							<div className="section hero-content">
 								<div className="columns is-justified-center">
 									<div className="column is-7">
-
+										
 										<PostContent data={data}/>
 
 										<SocialShare

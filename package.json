@@ -32,6 +32,7 @@
     "react-owl-carousel": "^2.3.1",
     "react-share": "^3.0.0",
     "react-typography": "^0.16.13",
+    "reading-time": "^1.2.0",
     "styled-components": "^4.2.0",
     "typography": "^0.16.16",
     "typography-theme-wordpress-2016": "^0.16.19"

@@ -11,7 +11,7 @@ export class PostHeader extends Component {
                 <h1 className="title" dangerouslySetInnerHTML={{__html:data.title}} />
                 <PostMeta
                     date={data.date}
-                    readTime="1 Min Read"
+                    readContent={data.content}
                     categories={data.categories}
                 />
                 <FeaturedImage 
