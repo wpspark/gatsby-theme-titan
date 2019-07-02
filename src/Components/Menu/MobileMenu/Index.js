@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CategoryMenu from './sidebarMenu';
+import CategoryMenu from '../SidebarMenu/Index';
 import {MobileMenuWrapper} from './Style';
 
 export class MobileMenu extends Component {
@@ -12,7 +12,7 @@ export class MobileMenu extends Component {
             <MobileMenuWrapper className="mobile-menu">
                 <button className="button has-text-grey" onClick={this.toggleOffCanvasMenu}>Menu</button>
                 <div className="navbar-start">
-                <CategoryMenu slug={this.props.slug} />
+                    <CategoryMenu slug={this.props.slug} />
                 </div>
             </MobileMenuWrapper>
         )

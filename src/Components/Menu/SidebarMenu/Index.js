@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link, StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby";
+import {Aside} from './Style'
 
 export default class CategoryMenu extends Component {
     state = { ready: false };
@@ -30,8 +31,8 @@ export default class CategoryMenu extends Component {
             }
           `}
           render={data => (
-            <aside  id="mySidenav" className="menu navbar-itemm sidenav">     
-              <a href="javascript:void(0)" className="closebtn" onClick={this.closeNav}>&times;</a> 
+            <Aside  id="mySidenav" className="menu navbar-itemm sidenav">     
+              <button className="closebtn" onClick={this.closeNav}>&times;</button> 
               <ul className="menu-listt">
                 
                 {
@@ -45,7 +46,7 @@ export default class CategoryMenu extends Component {
                 }
               </ul> 
               
-            </aside>
+            </Aside>
           )}
         />
       )

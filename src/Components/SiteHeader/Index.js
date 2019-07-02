@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link, StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import MainMenu from "../Menu/MainMenu"
-import MobileMenu from '../Menu/MobileMenu'
+import MobileMenu from '../Menu/MobileMenu/Index'
 
 export default class Header extends Component {
     toggleDropdownMenu = () => {
@@ -60,6 +60,10 @@ export default class Header extends Component {
                     <div className="navbar-start">
                       <MainMenu slug={this.props.slug} />
                     </div>
+                  </div>
+
+                  <div className="theme-switcher">
+                    <button className="button">Toggle Dark Mode</button>
                   </div>
 
                   
