@@ -5,16 +5,10 @@ import SEO from "../Utils/SEO"
 import PostCard from "../Components/AllPosts/PostCard"
 import UserInfo from '../Components/PageTitle/User'
 
-// import Header from '../components/siteHeader/postHeader'
-// import PostAuthor from "../components/post-author/index"
-// import { DiscussionEmbed } from "disqus-react";
-
 class UserTemplate extends Component {
     filterExcerpt = (excerpt) => {
         if( new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?(/.*)?").test(excerpt) ) {
-          // let reg = /<a\s*(.*)\>(.*)<\/a>/g;
           let reg = /<a\b[^>]*>(.*?)<\/a>/g;
-  
           let filterText = excerpt.replace(reg, "");
           return filterText;
         }else{
@@ -32,22 +26,6 @@ class UserTemplate extends Component {
                     <SEO title={user.name} />
 
                     <UserInfo data={user}/>
-
-                    {/* <section className="container">
-                        <div className="hero-body">
-                            <div className="columns is-multiline is-1-mobile is-justified-center">
-                            {
-                                data.map( (node, index) => {
-                                return (
-                                    <div key={index} className='column is-four-fifths'>
-                                    <PostCard cardData={node.node}/>
-                                    </div>
-                                )
-                                })
-                            }
-                            </div>
-                        </div>
-                    </section> */}
 
                     <section className="container">
                         <div className="hero-body">

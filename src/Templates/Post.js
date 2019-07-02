@@ -9,9 +9,6 @@ import PostHeader from '../Components/Post/Header/Index'
 import PostContent from '../Components/Post/Content/Index'
 import NewsLetter from '../Components/Newsletter/Index'
 
-// import Header from '../components/siteHeader/postHeader'
-
-
 class PostTemplate extends Component {
 
 	constructor(props) {
