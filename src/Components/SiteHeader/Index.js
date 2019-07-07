@@ -3,6 +3,7 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import MainMenu from "../Menu/MainMenu"
 import MobileMenu from '../Menu/MobileMenu/Index'
+import Styled from 'styled-components'
 export default class Header extends Component {
     toggleDropdownMenu = () => {
       document.getElementById('MainsiteNav').classList.toggle('is-active');
@@ -10,6 +11,12 @@ export default class Header extends Component {
 
     render() {
       let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
+      const NavWrapper = Styled.div`
+        .navbar{
+          background-color: ${props => props.theme.headerBg};
+          box-shadow:none;
+        }
+      `
 
       return (
         <StaticQuery
@@ -25,50 +32,52 @@ export default class Header extends Component {
             const { sparkData } = data;
 
             return (
-              <nav className="navbar is-transparent has-shadow is-spaced is-fixe-top" role="navigation">
-                <div className="container">
-                  <Helmet
-                    link={[
-                      {
-                        "rel": "icon",
-                        "type": "image/png",
-                        "href": sparkData.favicon, 
-                      }, 
-                      {
-                        "rel": "stylesheet",
-                        "href": 'https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap', 
-                      }
-                    ]}
-                  />
-                  {/* <Helmet>
-                    <script src="/node_modules/jquery/dist/jquery.js"></script>
-                  </Helmet> */}
+              <NavWrapper>
+                <nav className="navbar is-transparent is-spaced is-fixe-top" role="navigation">
+                  <div className="container">
+                    <Helmet
+                      link={[
+                        {
+                          "rel": "icon",
+                          "type": "image/png",
+                          "href": sparkData.favicon, 
+                        }, 
+                        {
+                          "rel": "stylesheet",
+                          "href": 'https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap', 
+                        }
+                      ]}
+                    />
+                    {/* <Helmet>
+                      <script src="/node_modules/jquery/dist/jquery.js"></script>
+                    </Helmet> */}
 
-                  <div className="navbar-brand">
-                    <Link to="/" className="navbar-item">
-                      {
-                        sparkData.logo ? <img src={sparkData.logo} alt="" /> : wordpressSiteMetadata.name
-                      }
-                    </Link>
+                    <div className="navbar-brand">
+                      <Link to="/" className="navbar-item">
+                        {
+                          sparkData.logo ? <img src={sparkData.logo} alt="" /> : wordpressSiteMetadata.name
+                        }
+                      </Link>
 
-                    <MobileMenu />
+                      <MobileMenu />
 
-                  </div>
-                
-                  <div className="navbar-menu">
-                    <div className="navbar-start">
-                      <MainMenu slug={this.props.slug} />
                     </div>
-                  </div>
-
-                  <div className="theme-switcher">
-                    <button className="button" onClick={this.props.toggleDarkMode}>Toggle Dark Mode</button>
-                  </div>
-
                   
-                
-                </div>
-              </nav>
+                    <div className="navbar-menu">
+                      <div className="navbar-start">
+                        <MainMenu slug={this.props.slug} />
+                      </div>
+                    </div>
+
+                    <div className="theme-switcher">
+                      <button className="button" onClick={this.props.toggleDarkMode}>Toggle Dark Mode</button>
+                    </div>
+
+                    
+                  
+                  </div>
+                </nav>
+              </NavWrapper>
             )
           }}
           />

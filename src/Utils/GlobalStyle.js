@@ -1,23 +1,26 @@
 export const InitialTheme = {
     background: '#fff',
+    headerBg: '#fff',
     footerBg: '#fafafa',
     color: '#4a4a4a',
     title: '#0a0a0a',
     subtitle: '#7a7a7a',
     link: '#41a4e6',
+    linkHover: '#0a0a0a',
     meta: '#b5b5b5',
     panel: '#f5f5f5',
     author: '#363636',
 }
 export const DarkTheme = {
     background: '#282c35', 
+    headerBg: '#21252c',
     footerBg: '#21252c',
     color: '#ccc',
     title: '#fff',
+    linkHover: '#41a4e6',
     subtitle: '#7a7a7a',
     link: '#fff',
     meta: '#b5b5b5',
     panel: '#21252c',
     author: '#fff',
-
 }

@@ -10,7 +10,7 @@ export const MenuItems = Styled.div`
         font-size:14px;
         transition:all 0.4s ease;
         &:hover{
-            color:#0a0a0a !important;
+            color:${props => props.theme.linkHover} !important;
         }
     }
 `
