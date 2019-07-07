@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { graphql} from "gatsby"
 import Layout from "../Layouts/Index"
 import SEO from "../Utils/SEO"
-import PostCard from "../Components/AllPosts/PostCard"
 import UserInfo from '../Components/PageTitle/User'
+import UserAllPosts from '../Components/UserAllPosts/Index';
 
 class UserTemplate extends Component {
     filterExcerpt = (excerpt) => {
@@ -27,26 +27,9 @@ class UserTemplate extends Component {
 
                     <UserInfo data={user}/>
 
-                    <section className="container">
-                        <div className="hero-body">
-                            <div className="columns is-multiline is-1-mobile is-justified-center">
-
-                                {
-                                    data
-                                    ?
-                                    data.map( (post, index) => 
-                                        <div key={index} className='column is-four-fifths'>
-                                            <PostCard cardData={post}/>
-                                            
-                                        </div>    
-                                    )
-                                    : <p>No Post for this Author</p>
-                                }
-
-                            </div>
-                        </div>
-                    </section>
-
+                    <UserAllPosts
+                        data = {data}
+                    />
 
                 </Layout>
         )

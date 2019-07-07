@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import PageTitle from '../Index'
-
+import {PageTitleWrapper} from '../Style'
 export class UserInfo extends Component {
 
     render() {
         const author = this.props.data;
         return (
-            <section className="has-text-centered">
+            <PageTitleWrapper className="has-text-centered">
                 <div className="container hero-body">
                     <figure className="image is-96x96 image-objectfit-contain" style={{margin:'0 auto'}}>
                         <img className="is-rounded" width="96" height="96" 
@@ -18,7 +18,7 @@ export class UserInfo extends Component {
                     {/* <p>Number of posts: {author.authored_wordpress__POST.length}</p> */}
                     <p className="m-10-0">{author.description}</p>
                 </div>
-            </section>
+            </PageTitleWrapper>
         )
     }
 }

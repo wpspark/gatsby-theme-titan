@@ -7,6 +7,7 @@ export const InitialTheme = {
     link: '#41a4e6',
     meta: '#b5b5b5',
     panel: '#f5f5f5',
+    author: '#363636',
 }
 export const DarkTheme = {
     background: '#282c35', 
@@ -17,4 +18,6 @@ export const DarkTheme = {
     link: '#fff',
     meta: '#b5b5b5',
     panel: '#21252c',
+    author: '#fff',
+
 }

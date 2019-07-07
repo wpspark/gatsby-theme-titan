@@ -63,7 +63,7 @@ export class PostCard extends Component {
                                 {/* <img className="is-rounded" width="30" height="30" src={post.author.avatar_urls.wordpress_96} alt=""/> */}
                                 <p className="p-0-10 has-text-grey-light">
                                     <span>By: </span>
-                                    <Link className="has-text-grey-darker" to={`/user/${post.author.slug}`}>{post.author.name}</Link>
+                                    <Link to={`/user/${post.author.slug}`}>{post.author.name}</Link>
                                 </p>
                             </div>
                         </div>

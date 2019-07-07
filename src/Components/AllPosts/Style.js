@@ -59,5 +59,8 @@ export const SinglePostCard = Styled.article`
         p, a{
             font-size:13px;
         }
+        a{
+            color: ${props => props.theme.author}
+        }
     }
 `
