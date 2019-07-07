@@ -3,7 +3,6 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import MainMenu from "../Menu/MainMenu"
 import MobileMenu from '../Menu/MobileMenu/Index'
-
 export default class Header extends Component {
     toggleDropdownMenu = () => {
       document.getElementById('MainsiteNav').classList.toggle('is-active');

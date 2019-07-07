@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Header from "../Components/SiteHeader/Index"
 import Footer from "../Components/SiteFooter/Index"
 import "../Utils/Typography"
+import {ThemeProvider} from 'styled-components'
+import {InitialTheme, DarkTheme} from '../Utils/GlobalStyle'
+
 
 class MainLayout extends Component {
 
@@ -60,24 +63,26 @@ class MainLayout extends Component {
   
   render() {
     return (
-      <div className="wp-spark-app">
+      <ThemeProvider theme={this.state.darkMode === 'true' ? DarkTheme : InitialTheme}>
+        <div className="wp-spark-app">
 
-        <Header slug={this.props.slug} wordpressSiteMetadata={this.props.wordpressSiteMetadata} toggleDarkMode={this.ToggleDarkMode} />
+          <Header slug={this.props.slug} wordpressSiteMetadata={this.props.wordpressSiteMetadata} toggleDarkMode={this.ToggleDarkMode} />
 
-      	<main>
-	        <div className="page-wrapper">
-            {this.props.children}
-          </div>
-        </main>
+          <main>
+            <div className="page-wrapper">
+              {this.props.children}
+            </div>
+          </main>
 
-        <Footer 
-          siteName="Spark"
-          facebook="htts://facebook.com/themexpert"
-          twitter="htts://twitter.com/themexpert"
-          linkedin="htts://linkedin.com/themexpert"
-          pinterest="htts://pinterest.com/themexpert"
-        />
-      </div>
+          <Footer 
+            siteName="Spark"
+            facebook="htts://facebook.com/themexpert"
+            twitter="htts://twitter.com/themexpert"
+            linkedin="htts://linkedin.com/themexpert"
+            pinterest="htts://pinterest.com/themexpert"
+          />
+        </div>
+      </ThemeProvider>
     )
   }
 }
