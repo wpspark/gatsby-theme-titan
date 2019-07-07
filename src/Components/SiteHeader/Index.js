@@ -3,8 +3,8 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import MainMenu from "../Menu/MainMenu"
 import MobileMenu from '../Menu/MobileMenu/Index'
-import Styled from 'styled-components'
-import { DarkTheme } from '../../Utils/GlobalStyle';
+// import { DarkTheme } from '../../Utils/GlobalStyle';
+import {NavWrapper, ThemeSwitcher} from './Style'
 export default class Header extends Component {
   
     state = {
@@ -15,40 +15,11 @@ export default class Header extends Component {
       document.getElementById('MainsiteNav').classList.toggle('is-active');
     }
 
-    componentDidMount = () => {
-      // let passedDarkMode = this.props.headerDarkMode;
-      // console.log(passedDarkMode);
-      // if(localStorageDarkModeStatus != null){
-      //   this.setState({
-      //     headDarkMode: localStorageDarkModeStatus
-      //   })
-      // }
-    }
-
-    componentWillReceiveProps= () => {
-      // let darkModeState = this.props.headerDarkMode;
-      // console.log('will receive props', darkModeState);
-      // this.setState({
-      //   headDarkMode: darkModeState
-      // })
-    }
-    
-
     render() {
       let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
       let headDarkModeStatus = this.props.headerDarkMode;
 
-      const NavWrapper = Styled.div`
-        .navbar{
-          background-color: ${props => props.theme.headerBg};
-          box-shadow:none;
-        }
-        .title-in-dark-mode{
-          color: ${props => props.theme.title};
-          font-weight:800;
-          font-size: 22px;
-        }
-      `
+      
       return (
         <StaticQuery
           query={graphql`
@@ -102,9 +73,11 @@ export default class Header extends Component {
                       </div>
                     </div>
 
-                    <div className="theme-switcher">
-                      <button className="button" onClick={this.props.toggleDarkMode}>Toggle Dark Mode</button>
-                    </div>
+                    <ThemeSwitcher className="theme-switcher">
+                      <button className="button" onClick={this.props.toggleDarkMode}>
+                        { (headDarkModeStatus === 'true') ? 'Light' : 'Dark'}
+                      </button>
+                    </ThemeSwitcher>
 
                     
                   
