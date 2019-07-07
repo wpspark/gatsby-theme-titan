@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import PostCard from './PostCard'
+import {MainBodyWrapper} from './Style'
+
 export default class AllPost extends Component {
 
     render() {
       let data = this.props.data;
       return (
-        <section className="container">
-          <div className="hero-body">
+        <MainBodyWrapper>
+          <div className="container hero-body">
             <div className="columns is-multiline is-1-mobile is-justified-center">
               {
                 data.map( (node, index) => {
@@ -19,7 +21,7 @@ export default class AllPost extends Component {
               }
             </div>
           </div>
-        </section>
+        </MainBodyWrapper>
       )
     }
 }

@@ -1,5 +1,8 @@
 import Styled from 'styled-components';
 
+export const MainBodyWrapper = Styled.section`
+    background: ${props => props.theme.background}
+`
 
 export const SinglePostCard = Styled.article`
     border:none;

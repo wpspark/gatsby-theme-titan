@@ -2,6 +2,8 @@ import Styled from 'styled-components';
 
 export const CarouselWrapper = Styled.section`
     position:relative;
+    background: ${props => props.theme.background}
+    padding:100px 0px 0px;
     @media(max-width:768px){
         padding:0px 30px;
     }
@@ -34,9 +36,9 @@ export const CarouselWrapper = Styled.section`
         .card-content{
             h2{
                 a{
+                    color: ${props => props.theme.title}
                     font-weight:800;
                     transition:all 0.4s ease;
-                    color:hsl(0, 0%, 29%);
                     &:hover{
                         color:#41a4e6;
                     }

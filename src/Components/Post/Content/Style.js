@@ -5,6 +5,7 @@ export const PostContentWrapper = Styled.div`
     .wp-block-image{
         margin-left:0;
     }
+    
     a{
         font-weight:800;
         color:#41a4e6;
@@ -13,9 +14,12 @@ export const PostContentWrapper = Styled.div`
             color:#41a4e6 !important;
         }
     }
-    h2, h3, h4{
+
+    h2, h3, h4, strong{
         font-weight:800 !important;
+        color:${props => props.theme.title} !important;
     }
+    
     h2{
         font-size:24px !important;
     }

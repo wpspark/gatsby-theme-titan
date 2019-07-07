@@ -6,6 +6,7 @@ export const PostHeaderWrapper = Styled.div`
         font-size:28px;
         font-weight:800;
         margin-bottom:15px;
+        color: ${props => props.theme.title}
     }
 
 `

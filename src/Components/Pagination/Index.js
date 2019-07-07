@@ -44,7 +44,7 @@ export default class AllPostPagination extends Component {
       const pageCount = this.props.pageCount
 
       return (
-        <PaginationWrapper className="section columns is-centered">
+        <PaginationWrapper className="section is-flex is-justified-center">
           <nav className="pagination is-half" role="navigation" aria-label="pagination">
             
             <ul className="pagination-list">

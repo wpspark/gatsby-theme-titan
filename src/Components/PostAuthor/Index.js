@@ -24,7 +24,7 @@ export default class PostAuthor extends Component {
 
               <div className="media-content">
                 <h4 className="title">
-                  <Link className="has-text-dark" to={'/user/' + data.slug} dangerouslySetInnerHTML={{__html:data.name + " "}} />
+                  <Link to={'/user/' + data.slug} dangerouslySetInnerHTML={{__html:data.name + " "}} />
                 </h4>
                 <p className="description">{data.description ? data.description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"}</p>
               </div>

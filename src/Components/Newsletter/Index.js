@@ -38,7 +38,7 @@ export class NewsLetter extends Component {
         return (
             <NewsletterWrapper className="newsletter-wrapper has-text-centered" background={this.props.background} style={{paddingTop:paddingTop}}>
                 <div className={ container ? 'is-flex container is-justified-center' : null}>
-                    <div className={ container ? 'column is-four-fifths has-background-light hero-body' : null }>
+                    <div className={ container ? 'column is-four-fifths subscriber-panel hero-body' : null }>
                         <h2 className="title">Subscribe to WpSpark</h2>
                         <p className="has-text-grey">Get the latest stuff delivered right to your inbox.</p>
                         {

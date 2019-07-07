@@ -8,5 +8,8 @@ export const PostAuthorBox = Styled.section`
         font-weight:800;
         font-size:20px;
         margin-bottom:8px !important;
+        a{
+            color: ${props => props.theme.title}
+        }
     }
 `

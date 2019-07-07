@@ -2,6 +2,7 @@ import Styled from 'styled-components';
 
 export const PaginationWrapper = Styled.section`
     padding-top:0px !important;
+    background: ${props => props.theme.background}
     li, a{
         color:hsl(0, 0%, 71%);
         font-weight:800;

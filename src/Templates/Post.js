@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { DiscussionEmbed } from "disqus-react";
 import Layout from "../Layouts/Index"
 import SEO from "../Utils/SEO"
 import PostAuthor from "../Components/PostAuthor/Index"
@@ -8,6 +7,8 @@ import SocialShare from '../Components/SocialShare/Index';
 import PostHeader from '../Components/Post/Header/Index'
 import PostContent from '../Components/Post/Content/Index'
 import NewsLetter from '../Components/Newsletter/Index'
+import DiscussComment from '../Components/Post/Comment/Index'
+import Styled from 'styled-components'
 
 class PostTemplate extends Component {
 
@@ -19,8 +20,13 @@ class PostTemplate extends Component {
 			featured_image: 'https://via.placeholder.com/600x320'
 		}
 	}
-  
+	
+	
   render() {
+		const PostBodyWrapper = Styled.section`
+			background : ${props => props.theme.background};
+			color: ${props => props.theme.color};
+		`
 		const data = this.props.pageContext.wordpressPost;
 		const disqusShortname = this.props.pageContext.site.siteMetadata.disqusShortname;
 		const prevPost = this.props.pageContext.prev
@@ -35,7 +41,7 @@ class PostTemplate extends Component {
 				
 				<SEO title={data.title} />
 
-				<section className="hero">
+				<PostBodyWrapper className="hero">
 					<div className="hero-bodyy">
 						<div className="container">
 
@@ -70,17 +76,13 @@ class PostTemplate extends Component {
 							</div>
 
 						</div>
+
+						<DiscussComment shortname={disqusShortname} config={disqusConfig} />
 						
-						<section className="section has-background-white-ter">
-							<div className="columns is-justified-center">
-								<div className="column is-5">
-									<DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-								</div>
-							</div>
-						</section>
+						
 
 					</div>
-				</section>
+				</PostBodyWrapper>
 
 				<NewsLetter container={false}/>
 

@@ -38,8 +38,8 @@ export class Carousel extends Component {
         const nav = this.props.nav === false ? this.props.nav : true;
         const autoPlay = this.props.autoPlay === false ? this.props.autoPlay : true;
         return (
-            <CarouselWrapper className="container">
-                <div className="hero-body">
+            <CarouselWrapper>
+                <div className="container">
                     <div className="columns is-multiline is-1-mobile is-justified-center">
                         <OwlCarousel
                             className="owl-theme"
