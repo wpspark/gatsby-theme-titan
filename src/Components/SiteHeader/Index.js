@@ -4,20 +4,51 @@ import Helmet from "react-helmet"
 import MainMenu from "../Menu/MainMenu"
 import MobileMenu from '../Menu/MobileMenu/Index'
 import Styled from 'styled-components'
+import { DarkTheme } from '../../Utils/GlobalStyle';
 export default class Header extends Component {
+  
+    state = {
+      headDarkMode: '',
+    }
+  
     toggleDropdownMenu = () => {
       document.getElementById('MainsiteNav').classList.toggle('is-active');
     }
 
+    componentDidMount = () => {
+      // let passedDarkMode = this.props.headerDarkMode;
+      // console.log(passedDarkMode);
+      // if(localStorageDarkModeStatus != null){
+      //   this.setState({
+      //     headDarkMode: localStorageDarkModeStatus
+      //   })
+      // }
+    }
+
+    componentWillReceiveProps= () => {
+      // let darkModeState = this.props.headerDarkMode;
+      // console.log('will receive props', darkModeState);
+      // this.setState({
+      //   headDarkMode: darkModeState
+      // })
+    }
+    
+
     render() {
       let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
+      let headDarkModeStatus = this.props.headerDarkMode;
+
       const NavWrapper = Styled.div`
         .navbar{
           background-color: ${props => props.theme.headerBg};
           box-shadow:none;
         }
+        .title-in-dark-mode{
+          color: ${props => props.theme.title};
+          font-weight:800;
+          font-size: 22px;
+        }
       `
-
       return (
         <StaticQuery
           query={graphql`
@@ -55,7 +86,9 @@ export default class Header extends Component {
                     <div className="navbar-brand">
                       <Link to="/" className="navbar-item">
                         {
-                          sparkData.logo ? <img src={sparkData.logo} alt="" /> : wordpressSiteMetadata.name
+                          sparkData.logo && (headDarkModeStatus === 'false')
+                          ? <img src={sparkData.logo} alt="" /> 
+                          : <h2 className="title-in-dark-mode">{wordpressSiteMetadata.name}</h2>
                         }
                       </Link>
 

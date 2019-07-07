@@ -18,7 +18,6 @@ class MainLayout extends Component {
      */
 
     let localStorageDarkModeStatus = localStorage.getItem('dark-mode-status');
-    console.log(typeof(localStorageDarkModeStatus), localStorageDarkModeStatus);
     /**
      * if dark mode value is in local storage 
      * then set state value to 
@@ -66,7 +65,12 @@ class MainLayout extends Component {
       <ThemeProvider theme={this.state.darkMode === 'true' ? DarkTheme : InitialTheme}>
         <div className="wp-spark-app">
 
-          <Header slug={this.props.slug} wordpressSiteMetadata={this.props.wordpressSiteMetadata} toggleDarkMode={this.ToggleDarkMode} />
+          <Header 
+          slug={this.props.slug} 
+          wordpressSiteMetadata={this.props.wordpressSiteMetadata} 
+          toggleDarkMode={this.ToggleDarkMode}  
+          headerDarkMode={localStorage.getItem('dark-mode-status')}
+          />
 
           <main>
             <div className="page-wrapper">
