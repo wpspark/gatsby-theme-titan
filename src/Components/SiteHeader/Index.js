@@ -63,7 +63,7 @@ export default class Header extends Component {
                   </div>
 
                   <div className="theme-switcher">
-                    <button className="button">Toggle Dark Mode</button>
+                    <button className="button" onClick={this.props.toggleDarkMode}>Toggle Dark Mode</button>
                   </div>
 
                   
