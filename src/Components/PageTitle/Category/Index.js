@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import PageTitle from '../Index'
-
+import {PageTitleWrapper} from '../Style'
 
 export class CatInfo extends Component {
 
     render() {
         const data = this.props.data;
         return (
-            <section className="container has-text-centered">
-                <div className="hero-body">
+            <PageTitleWrapper className="has-text-centered">
+                <div className="container hero-body">
                     <PageTitle title={data.name}/>
                     <p>Number of posts: {data.count}</p>
                 </div>
-            </section>
+            </PageTitleWrapper>
         )
     }
 }

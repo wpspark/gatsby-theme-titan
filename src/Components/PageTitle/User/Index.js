@@ -6,8 +6,8 @@ export class UserInfo extends Component {
     render() {
         const author = this.props.data;
         return (
-            <section className="container has-text-centered">
-                <div className="hero-body">
+            <section className="has-text-centered">
+                <div className="container hero-body">
                     <figure className="image is-96x96 image-objectfit-contain" style={{margin:'0 auto'}}>
                         <img className="is-rounded" width="96" height="96" 
                             src={ author.avatar_urls.wordpress_96 } 

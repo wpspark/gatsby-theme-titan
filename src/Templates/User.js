@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { graphql} from "gatsby"
-import Layout from "../Layouts/UserIndex"
+import Layout from "../Layouts/Index"
 import SEO from "../Utils/SEO"
 import PostCard from "../Components/AllPosts/PostCard"
 import UserInfo from '../Components/PageTitle/User'

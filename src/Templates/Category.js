@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { graphql } from "gatsby"
-import Layout from "../Layouts/CatIndex"
+import Layout from "../Layouts/Index"
 import SEO from "../Utils/SEO"
 import AllPost from "../Components/AllPosts/Index"
 import CatInfo from '../Components/PageTitle/Category/Index'
