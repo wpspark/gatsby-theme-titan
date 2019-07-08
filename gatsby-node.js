@@ -43,6 +43,17 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
 }
 
 exports.onCreateWebpackConfig = ({
+  actions,
+}) => {
+  const { setWebpackConfig } = actions;
+  setWebpackConfig({
+    externals: {
+      jquery: 'jQuery', // important: 'Q' capitalized
+    }
+  })
+}
+
+exports.onCreateWebpackConfig = ({
   stage,
   rules,
   loaders,
@@ -59,3 +70,21 @@ exports.onCreateWebpackConfig = ({
     ],
   })
 }
+
+
+
+// exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+//   if (stage === "build-html") {
+//     actions.setWebpackConfig({
+//       module: {
+//         rules: [
+//           {
+//             test: /bad-module/,
+//             use: loaders.null(),
+//           },
+//         ],
+//       },
+//     })
+//   }
+// }
+

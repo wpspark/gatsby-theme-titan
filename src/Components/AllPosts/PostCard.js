@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
 import {SinglePostCard} from './Style'
-const readingTime = require('reading-time');
+import readingTime from 'reading-time'
+// const readingTime = require('reading-time');
 
 export class PostCard extends Component {
     filterExcerpt = (excerpt) => {

@@ -61,6 +61,7 @@ class MainLayout extends Component {
   }
   
   render() {
+    // let localDataForDarkMode = localStorage.getItem('dark-mode-status');
     return (
       <ThemeProvider theme={this.state.darkMode === 'true' ? DarkTheme : InitialTheme}>
         <div className="wp-spark-app">
@@ -69,7 +70,7 @@ class MainLayout extends Component {
           slug={this.props.slug} 
           wordpressSiteMetadata={this.props.wordpressSiteMetadata} 
           toggleDarkMode={this.ToggleDarkMode}  
-          headerDarkMode={localStorage.getItem('dark-mode-status')}
+          headerDarkMode={this.state.darkMode}
           />
 
           <main>
