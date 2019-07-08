@@ -24,6 +24,4 @@ export const ThemeSwitcher = Styled.div`
             right:75px;
         }
     }
-
-    
 `

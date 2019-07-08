@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CategoryMenu from '../SidebarMenu/Index';
 import {MobileMenuWrapper} from './Style';
+// import { NONAME } from 'dns';
 
 export class MobileMenu extends Component {
     toggleOffCanvasMenu = () => {
@@ -9,7 +10,7 @@ export class MobileMenu extends Component {
     }
     render() {
         return (
-            <MobileMenuWrapper className="mobile-menu">
+            <MobileMenuWrapper className="mobile-menu" style={{display:'none'}}>
                 <button className="button has-text-grey" onClick={this.toggleOffCanvasMenu}>Menu</button>
                 <div className="navbar-start">
                     <CategoryMenu slug={this.props.slug} />
