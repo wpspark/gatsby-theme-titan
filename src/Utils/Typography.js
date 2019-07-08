@@ -1,5 +1,5 @@
 // Load styles
 import 'bulma/css/bulma.css';
-import './spark.css';
-import './layout.css';
+import './Spark.css';
+import './Layout.css';
 
