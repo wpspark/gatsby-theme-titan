@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { graphql} from "gatsby"
 import Layout from "../Layouts/Index"
 import SEO from "../Utils/SEO"
-import UserInfo from '../Components/PageTitle/User'
+import UserInfo from '../Components/PageTitle/User/Index'
 import UserAllPosts from '../Components/UserAllPosts/Index';
 
 class UserTemplate extends Component {
