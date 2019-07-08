@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Styled from 'styled-components'
 import Layout from "../Layouts/Index"
 import SEO from "../Utils/SEO"
 import PostAuthor from "../Components/PostAuthor/Index"
@@ -8,7 +9,6 @@ import PostHeader from '../Components/Post/Header/Index'
 import PostContent from '../Components/Post/Content/Index'
 import NewsLetter from '../Components/Newsletter/Index'
 import DiscussComment from '../Components/Post/Comment/Index'
-import Styled from 'styled-components'
 
 class PostTemplate extends Component {
 

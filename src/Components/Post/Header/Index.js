@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import {PostHeaderWrapper} from './Style'
 import PostMeta from '../Meta/Index'
 import FeaturedImage from '../FeaturedImage/Index';
-import {PostHeaderWrapper} from './Style'
 
 export class PostHeader extends Component {
     render() {
