@@ -1,7 +1,7 @@
 {
-  "name": "BlogTheme1-WpSpark",
+  "name": "BlogTheme4-WpSpark",
   "private": true,
-  "description": "First blog theme of WpSpark",
+  "description": "Blog theme 4 of WpSpark",
   "version": "1.0.0",
   "author": "wpspark.io",
   "dependencies": {
@@ -34,7 +34,7 @@
     "react-share": "^3.0.0",
     "react-typography": "^0.16.13",
     "reading-time": "^1.2.0",
-    "styled-components": "^4.2.0",
+    "styled-components": "^4.3.2",
     "typography": "^0.16.16",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
