@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const PostMetaData = Styled.div`
+export const PostMetaData = styled.div`
     font-weight:800;
     font-size:12px;
     p, a{

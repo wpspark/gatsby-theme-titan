@@ -7,6 +7,7 @@
   "dependencies": {
     "@loadable/component": "^5.10.1",
     "axios": "^0.18.0",
+    "babel-plugin-styled-components": "^1.10.6",
     "bulma": "^0.7.4",
     "disqus-react": "^1.0.5",
     "gatsby": "^2.4.6",
@@ -18,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.37",
+    "gatsby-plugin-styled-components": "^3.1.2",
     "gatsby-plugin-typography": "^2.2.0",
     "gatsby-source-wordpress": "git+https://oauth2:ce7c96d90e5a4410bf08d1f5011c04073f97273b3b0d0269740a7b61b619bae9@gitlab.com/wpspark/gatsby-source-wordpress.git#master",
     "gatsby-transformer-sharp": "^2.1.19",

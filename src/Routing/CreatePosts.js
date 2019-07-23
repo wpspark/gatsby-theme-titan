@@ -145,6 +145,7 @@ module.exports = async ({ actions, graphql }) => {
       // });
       
       _.each(result.data.allWordpressPost.edges, (edge, index) => {
+          edge.node.slug = edge.node.slug.includes('google-ads') ? edge.node.slug.replace("google-ads", "googleads"): edge.node.slug;
           createPage({
               path: `/post/${edge.node.slug}/`,
               component: slash(postTemplate),

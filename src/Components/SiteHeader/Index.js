@@ -16,7 +16,7 @@ export default class Header extends Component {
     }
 
     render() {
-      let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
+      // let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
       let headDarkModeStatus = this.props.headerDarkMode;
 
       
@@ -57,9 +57,9 @@ export default class Header extends Component {
                     <div className="navbar-brand">
                       <Link to="/" className="navbar-item">
                         {
-                          sparkData.logo && (headDarkModeStatus === 'false')
-                          ? <img src={sparkData.logo} alt="" /> 
-                          : <h2 className="title-in-dark-mode">{wordpressSiteMetadata.name}</h2>
+                          // sparkData.logo && (headDarkModeStatus === 'false')
+                          <img src={sparkData.logo} alt="" /> 
+                          // : <h2 className="title-in-dark-mode">{wordpressSiteMetadata.name}</h2>
                         }
                       </Link>
 

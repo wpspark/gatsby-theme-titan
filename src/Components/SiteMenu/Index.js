@@ -10,25 +10,6 @@ export default class Menu extends Component {
         <StaticQuery
           query={graphql`
           query SiteMenu {
-            allWordpressWpApiMenusMenusItems(filter: {
-              slug: {
-                eq: "main-menu"
-              }
-            }){
-              edges{
-                node{
-                  id
-                  name
-                  items {
-                    wordpress_id
-                    order
-                    wordpress_parent
-                    title
-                    url          
-                  }
-                }
-              }
-            }
             wordpressSiteMetadata{
               name
               description

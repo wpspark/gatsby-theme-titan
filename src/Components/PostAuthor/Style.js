@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const PostAuthorBox = Styled.section`
+export const PostAuthorBox = styled.section`
     padding:30px 0px;
     margin:30px 0px;
     line-height:1.7;
@@ -9,7 +9,7 @@ export const PostAuthorBox = Styled.section`
         font-size:20px;
         margin-bottom:8px !important;
         a{
-            color: ${props => props.theme.title}
+            color: ${props => props.theme.title};
         }
     }
 `

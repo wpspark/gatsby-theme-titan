@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const PostContentWrapper = Styled.div`
+export const PostContentWrapper = styled.div`
     line-height:1.7;
     .wp-block-image{
         margin-left:0;

@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const MobileMenuWrapper = Styled.div`
+export const MobileMenuWrapper = styled.div`
     display:none;
     @media(max-width:992px){
         display:block;

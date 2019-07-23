@@ -1,5 +1,5 @@
-import Styled from 'styled-components'
+import styled from 'styled-components'
 
-export const CommnetWrapper = Styled.div`
-    background: ${props => props.theme.panel}
+export const CommnetWrapper = styled.div`
+    background: ${props => props.theme.panel};
 `

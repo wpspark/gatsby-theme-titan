@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Styled from 'styled-components'
+import styled from 'styled-components'
 import Layout from "../Layouts/Index"
 import SEO from "../Utils/SEO"
 import PostAuthor from "../Components/PostAuthor/Index"
@@ -23,7 +23,7 @@ class PostTemplate extends Component {
 	
 	
   render() {
-		const PostBodyWrapper = Styled.section`
+		const PostBodyWrapper = styled.section`
 			background : ${props => props.theme.background};
 			color: ${props => props.theme.color};
 		`

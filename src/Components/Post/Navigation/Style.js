@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const PostNavigationWrapper = Styled.section`
+export const PostNavigationWrapper = styled.section`
     margin:30px 0px 30px;
     a{
         transition:all 0.5s ease;

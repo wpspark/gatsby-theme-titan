@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const Aside = Styled.aside`
+export const Aside = styled.aside`
     /**
     sidenav
     */

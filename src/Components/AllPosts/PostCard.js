@@ -40,7 +40,7 @@ export class PostCard extends Component {
                         )}
                         
                     </p>
-                    <p className="post-excerpt has-text-grey-light-dark" style={{margin:'20px 0px 0px'}} dangerouslySetInnerHTML={{__html:this.filterExcerpt(post.excerpt)}}/>
+                    <div className="post-excerpt has-text-grey-light-dark" style={{margin:'20px 0px 0px'}} dangerouslySetInnerHTML={{__html:this.filterExcerpt(post.excerpt)}}/>
 
                     <div className="card-footer post-meta has-text-grey-light is-space-between m-20-0 p-20-0 is-uppercase">
                         <div className="left is-flex is-align-center">

@@ -1,10 +1,10 @@
-import Styled from "styled-components";
+import styled from "styled-components";
 
-export const FooterWrapper = Styled.footer`
+export const FooterWrapper = styled.footer`
     padding:50px;
     background:${props => props.theme.footerBg};
     strong{
-        color: ${props => props.theme.title}
+        color: ${props => props.theme.title};
     }
     a{
         transition:all 0.4s ease;

@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const MenuItems = Styled.div`
+export const MenuItems = styled.div`
     margin-left:15px;
     border-left:solid 2px #eee;
     padding:0 !important;

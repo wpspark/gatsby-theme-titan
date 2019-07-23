@@ -1,12 +1,12 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const PostHeaderWrapper = Styled.div`
+export const PostHeaderWrapper = styled.div`
     padding-bottom:0px !important;
     .title{
         font-size:28px;
         font-weight:800;
         margin-bottom:15px;
-        color: ${props => props.theme.title}
+        color: ${props => props.theme.title};
     }
 
 `

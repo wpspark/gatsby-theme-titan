@@ -1,6 +1,6 @@
-import Styled from 'styled-components'
+import styled from 'styled-components'
 
-export const SocialWrapper = Styled.div`
+export const SocialWrapper = styled.div`
     margin:40px 0px 30px;
     .SocialMediaShareButton{
         margin-right:8px;
