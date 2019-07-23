@@ -17,6 +17,7 @@ export class PostCard extends Component {
     render() {
         const post = this.props.cardData;
         const timeToRead = readingTime(post.content);
+        post.slug = post.slug.includes('google-ads') ? post.slug.replace("google-ads", "googleads"): post.slug;
         return (
             <SinglePostCard className="cardd"> 
 

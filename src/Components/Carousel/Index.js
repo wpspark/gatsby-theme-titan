@@ -14,7 +14,6 @@ export class Carousel extends Component {
         responsive:{},
     }
     componentDidMount(){
-        // window.jQuery = $;
         
         const desktop = this.props.desktop ? this.props.desktop : 4;
         const tablet = this.props.tablet ? this.props.tablet : 2;

@@ -4,6 +4,7 @@ export const CarouselWrapper = styled.section`
     position:relative;
     background: ${props => props.theme.background};
     padding:100px 0px 0px;
+    min-height:450px;
     @media(max-width:768px){
         padding:0px 30px;
     }
@@ -31,6 +32,9 @@ export const CarouselWrapper = styled.section`
                     font-weight:700;
                     border-radius:50px;
                 }
+            }
+            img{
+                object-fit:cover;
             }
         }
         .card-content{

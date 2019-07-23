@@ -17,7 +17,16 @@ export const ThemeSwitcher = styled.div`
         font-size:14px;
         font-weight:800;
         transition:all 0.3s ease;
-        color: ${props => props.theme.meta};
+        background:${props => props.theme.title};
+        color: ${props => props.theme.background};
+        border-color: ${props => props.theme.panel};
+        &:hover{
+            color: ${props => props.theme.background};
+        }
+        &:focus{
+            color: ${props => props.theme.background};
+            border-color: ${props => props.theme.panel};
+        }
         @media(max-width:767px){
             position:absolute;
             top:10px;

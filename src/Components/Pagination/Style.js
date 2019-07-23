@@ -8,6 +8,7 @@ export const PaginationWrapper = styled.section`
         font-weight:800;
         font-size:15px;
         transition:all 0.5s ease;
+        background:transparent;
         &:hover{
             color: ${props => props.theme.linkHover};
         }

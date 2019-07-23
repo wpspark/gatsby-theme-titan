@@ -5,6 +5,7 @@ export const PostNavigationWrapper = styled.section`
     a{
         transition:all 0.5s ease;
         font-weight:700;
+        background:transparent;
         &:focus{
             border-color:#dbdbdb;
         }

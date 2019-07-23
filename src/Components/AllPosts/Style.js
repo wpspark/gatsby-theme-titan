@@ -9,7 +9,7 @@ export const SinglePostCard = styled.article`
     box-shadow:none;
     background: ${props => props.theme.background};
     .card-image{
-        border:solid 1px #f7f7f7;
+        border:solid 1px ${props => props.theme.panel};
         line-height:0;
         img{
             width:100%;
@@ -54,6 +54,7 @@ export const SinglePostCard = styled.article`
     }
     .card-footer{
         margin-top:30px;
+        border-top:solid 2px ${props => props.theme.panel};
     }
     .user-wrapper{
         p, a{
