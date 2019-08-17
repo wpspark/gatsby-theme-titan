@@ -37,9 +37,7 @@ _Before start development or deploy make sure our `spark-lite` WordPress plugin 
     ``` 
 
 3.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
+    To start development process run below command from your terminal.
     ```sh
     gatsby develop mysitename
     or 
@@ -52,6 +50,16 @@ _Before start development or deploy make sure our `spark-lite` WordPress plugin 
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. 
     This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    <br>
+
+
+5.  **Build Process.**
+
+    To build your site run bellow command from your terminal
+    ```sh
+    npm run clean
+    gatsby build mysitename
+    ```
 
 
 ## 💫 Deploy With Netlify
