@@ -86,11 +86,6 @@ export const query = graphql`
             }
           }
           spark_media
-          tags {
-            id
-            name
-            slug
-          }
         }
       }
     }

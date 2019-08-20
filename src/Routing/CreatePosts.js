@@ -51,11 +51,6 @@ const postQuery = `
           }
         }
         spark_media
-        tags {
-          id
-          name
-          slug
-        }
       }
     }
   }

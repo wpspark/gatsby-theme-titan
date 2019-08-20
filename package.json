@@ -1,11 +1,12 @@
 {
-  "name": "BlogTheme4-WpSpark",
+  "name": "Titan",
   "private": true,
   "description": "Blog theme 4 of WpSpark",
   "version": "1.0.0",
   "author": "wpspark.io",
   "dependencies": {
     "@loadable/component": "^5.10.1",
+    "@theanamhossain/gatsby-source-wordpress": "^3.0.62",
     "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.10.6",
     "bulma": "^0.7.4",

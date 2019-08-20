@@ -28,7 +28,7 @@ module.exports = {
     `gatsby-image`,
     `gatsby-plugin-sharp`, 
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: `@theanamhossain/gatsby-source-wordpress`,
       options: {
         baseUrl: process.env.baseUrl,
         auth: {},
@@ -42,12 +42,13 @@ module.exports = {
           "**/pages",
           // "**/media",
           "**/categories",
-          "**/tags",
           "**/taxonomies",
           "**/users",
+          "**/spark",
+          "**/userdata",
           // "/wp-api-menus/**",
         ],
-        verboseOutput: true,
+        verboseOutput: false,
         // concurrentRequests: 1,
         // use a custom normalizer which is applied after the built-in ones.
         normalizer: function({ entities }) {

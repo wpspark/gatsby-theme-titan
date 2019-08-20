@@ -4,16 +4,12 @@ const webpack = require('webpack');
 const createPosts = require(`./src/Routing/CreatePosts`)
 const createCategories = require(`./src/Routing/CreateCategories`)
 const createUsers = require(`./src/Routing/CreateUsers`)
-// const createPages = require(`./src/Routing/createpages`)
-// const createTags = require(`./src/routing/createtags`)
 
 
 exports.createPages = async ({ actions, graphql }) => {
   await createPosts({ actions, graphql })
   await createCategories({ actions, graphql })
-  // await createPages({ actions, graphql })
   await createUsers({ actions, graphql })
-  // await createTags({ actions, graphql })
 }
 
 exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => {
