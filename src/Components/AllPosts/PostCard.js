@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from "gatsby"
 import {SinglePostCard} from './Style'
 import readingTime from 'reading-time'
-// const readingTime = require('reading-time');
 
 export class PostCard extends Component {
     filterExcerpt = (excerpt) => {
@@ -49,10 +48,6 @@ export class PostCard extends Component {
                                 <span className="text-icon arrow-right"></span>
                                 <Link to={`/post/${post.slug}`}>Read More</Link>
                             </div>
-                            {/* <div className="read-later is-flex is-align-center p-0-10 m-0-10">
-                                <span className="text-icon bookmark"></span>
-                                <Link className="has-text-grey-darker" to={`/post/${post.slug}`}>Read Later</Link>
-                            </div> */}
                         </div>
                         <div className="right is-capitalize">
                             <div className="user-wrapper is-flex is-align-center">
@@ -62,10 +57,9 @@ export class PostCard extends Component {
                                         alt={ post.author.name }
                                     />
                                 </figure>
-                                {/* <img className="is-rounded" width="30" height="30" src={post.author.avatar_urls.wordpress_96} alt=""/> */}
                                 <p className="p-0-10 has-text-grey-light">
                                     <span>By: </span>
-                                    <Link to={`/user/${post.author.slug}`}>{post.author.name}</Link>
+                                    <Link to={`/user/${post.author.slug.toLowerCase()}`}>{post.author.name}</Link>
                                 </p>
                             </div>
                         </div>

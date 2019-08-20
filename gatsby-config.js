@@ -40,7 +40,6 @@ module.exports = {
           "**/site_metadata",
           "**/posts",
           "**/pages",
-          // "**/media",
           "**/categories",
           "**/taxonomies",
           "**/users",

@@ -6,9 +6,6 @@ import CarouselCard from './CarouselCard';
 import {CarouselWrapper} from './Style';
 const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
-// import OwlCarousel from 'react-owl-carousel';
-// import $ from 'jquery';
-
 export class Carousel extends Component {
     state= {
         responsive:{},

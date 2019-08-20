@@ -16,7 +16,7 @@ class UserTemplate extends Component {
         }
     }
     render() {
-        const data = this.props.data.allWordpressWpUsers.edges[0].node.authored_wordpress__POST;
+        const data = this.props.data.allWordpressWpUserdata.edges[0].node.authored_wordpress__POST;
         const user = this.props.pageContext.userData;
         
 
@@ -40,7 +40,7 @@ export default UserTemplate;
 
 export const UserPostQuery = graphql`
     query UsersPostQuery($id: String!){
-        allWordpressWpUsers(filter:{
+        allWordpressWpUserdata(filter:{
             id:{
                 eq: $id
             }

@@ -13,7 +13,6 @@ class catHeader extends Component {
     }
     
     render() {
-      // let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
       
       const zindexUp = {
           position:'fixed',

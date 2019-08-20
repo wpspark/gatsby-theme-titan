@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CategoryMenu from '../SidebarMenu/Index';
 import {MobileMenuWrapper} from './Style';
-// import { NONAME } from 'dns';
 
 export class MobileMenu extends Component {
     toggleOffCanvasMenu = () => {

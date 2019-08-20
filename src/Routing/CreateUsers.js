@@ -20,7 +20,7 @@ const userQuery = `
         url
         home
     }
-    allWordpressWpUsers{
+    allWordpressWpUserdata{
         edges{
             node{
                 id
@@ -73,9 +73,9 @@ module.exports = async ({ actions, graphql }) => {
 
       const userTemplate = path.resolve("./src/Templates/User.js");
       
-        _.each(result.data.allWordpressWpUsers.edges, edge => {
+        _.each(result.data.allWordpressWpUserdata.edges, edge => {
             createPage({
-                path: `/user/${edge.node.slug}/`,
+                path: `/user/${edge.node.slug.toLowerCase()}/`,
                 component: slash(userTemplate),
                 context: {
                     id: edge.node.id,

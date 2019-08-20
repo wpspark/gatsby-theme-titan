@@ -16,7 +16,6 @@ export default class Header extends Component {
     }
 
     render() {
-      // let wordpressSiteMetadata = this.props.wordpressSiteMetadata;
       let headDarkModeStatus = this.props.headerDarkMode;
 
       
